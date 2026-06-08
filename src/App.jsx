@@ -1,9 +1,10 @@
+import { useState, useEffect } from "react";
 import DataImage from "./data";
-import {listTools, listProyek} from "./data";
+import { listTools, listProyek } from "./data";
 
 function App() {
-  return ( 
-  <>
+ return ( <div className="bg-white text-zinc-900 dark:bg-zinc-900 dark:text-white min-h-screen transition-all duration-300">
+  
   {/* Ini bagian Beranda */}
     <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
       <div className="animate__animated animate__fadeInUp animate__delay-3s">
@@ -22,7 +23,10 @@ function App() {
             <a href="#" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">
               Donwload CV <i className="ri-download-line ri-lg"></i>
             </a>
-            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
+            <a
+  href="#proyek"
+  className="bg-zinc-200 dark:bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-300 dark:hover:bg-zinc-600"
+>
               Lihat Proyek <i className="ri-arrow-down-line ri-lg"></i>
             </a>
           </div>
@@ -182,7 +186,7 @@ function App() {
           </div>
         </form>
       </div>
-  </>
+  </div>
   );
 }
 
